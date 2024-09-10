@@ -1,6 +1,3 @@
-// pointers_assignment.c
-// This program implements three functions using pointers: swap, findMax, and reverseArray.
-
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -37,23 +34,15 @@ int main() {
     return 0;
 }
 
-//---------------------------------
-// COMPLETE THE FUNCTION DEFINITIONS BELOW 
-//---------------------------------
-
-
 // Function to swap two integers using pointers
 void swap(int *a, int *b) {
-    //Write the function description
- int temp = *a;  // Store the value at address a in temp
+    int temp = *a;  // Store the value at address a in temp
     *a = *b;        // Assign the value at address b to address a
     *b = temp;      // Assign the stored value (temp) to address b
 }
 
 // Function to find the maximum value in an array using pointers
 int findMax(int *arr, int length) {
-    //Write the fucntion description 
-     {
     if (length <= 0) {
         return -1; // Return -1 for invalid length
     }
@@ -69,9 +58,7 @@ int findMax(int *arr, int length) {
 
 // Function to reverse an array using pointers
 void reverseArray(int *arr, int length) {
-    //Write the function description 
-    
-  int start = 0;
+    int start = 0;
     int end = length - 1;
 
     while (start < end) {
@@ -85,10 +72,6 @@ void reverseArray(int *arr, int length) {
         end--;
     }
 }
-
-//---------------------------------
-// TEST CASES - Don't change the code below this.
-//---------------------------------
 
 // Test case for swap function
 bool testSwap() {
